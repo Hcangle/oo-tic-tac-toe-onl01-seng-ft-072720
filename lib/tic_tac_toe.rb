@@ -41,4 +41,9 @@ def valid_move?(board, index)
   index.between?(0,8) && !position_taken?(board, index)
 end 
 
+def turn(board)
+  puts "Where would you like yo go?"
+  input = gets.strip
+  index = input_to_index(input)
+  
 end 
