@@ -50,6 +50,7 @@ def turn(board)
     move(board, index, "X")
     display_board(board)
   else 
+    puts "That was invalid, try again."
     turn(board)
   end 
 end 
