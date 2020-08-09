@@ -101,7 +101,7 @@ def won?(board)
  end 
 
  def draw?(board)
-  if full?(board) && !won?(board)
+  full?(board) && !won?(board)
   end 
   
   def over?(board)
