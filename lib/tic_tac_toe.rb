@@ -94,13 +94,13 @@ def won?(board)
     end
    end
   winning_combo
-end
+ end
 
-def full?(board)
+ def full?(board)
   turn_count(board) == 9
-end 
+ end 
 
-def draw?(board)
+ def draw?(board)
   if full?(board) && !won?(board)
   end 
   
