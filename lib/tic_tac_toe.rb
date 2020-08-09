@@ -95,4 +95,25 @@ def won?(board)
  end
 winning_combo
 end
+
+def full?(board)
+  turn_count(board) == 9
+end 
+
+def draw?(board)
+  if full?(board) && !won?(board)
+  end 
+  
+  def over?(board)
+    won?(board) || draw?(board)
+  end 
+   def winner(board)
+     if won?(board) # [0,1,2] 
+     turn_count(board).odd?
+     "X" 
+   else 
+     "O"
+   end 
+   
+     
 end
