@@ -84,8 +84,13 @@ def won?(board)
  position_1 = combo[0]
  position_2 = combo[1]
  position_3 = combo[2]
+ 
  if board[position_1] == "X" && board[position_2] == "X" && board[postion_3] == "X"
- board[position_1] == "O" && board[position_2] == "O" && board[postion_3] == "0"
+   winning_combo = combo 
+   
+ elsif board[position_1] == "O" && board[position_2] == "O" && board[postion_3] == "0"
+   winning_combo - combo 
+   
 end
 end
 end
