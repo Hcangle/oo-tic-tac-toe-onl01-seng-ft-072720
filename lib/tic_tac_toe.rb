@@ -110,9 +110,9 @@ def draw?(board)
    def winner(board)
      if won?(board) # [0,1,2] 
      turn_count(board).odd?
-     "X" 
+     "O" 
    else 
-     "O"
+     "X"
    end 
  end 
      
