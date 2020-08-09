@@ -70,5 +70,12 @@ def turn_count(board)
  occupied_spaces
   
 end 
+def current_player(board)
+  if turn_count(board).odd?
+    "X"
+  else
+    "O"
+  end 
+end 
 
 end
