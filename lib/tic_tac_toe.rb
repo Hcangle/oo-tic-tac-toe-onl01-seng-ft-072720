@@ -109,10 +109,10 @@ def won?(board)
   end 
    
    def winner(board)
-     if won?(board) # [0,1,2] 
-     turn_count(board).odd?
+    x = won?(board) # [0,1,2] 
+    if turn_count(board).odd?
      "O" 
-   else 
+    else 
      "X"
    end 
  end 
