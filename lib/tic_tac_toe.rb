@@ -78,10 +78,11 @@ def current_player(board)
   end 
 end 
 def won?(board)
- combo = WIN_COMBINATIONS[0] #=> [3,4,5]
+  WIN_COMBINATIONS.each do |combo|
+ # combo = WIN_COMBINATIONS[0] #=> [3,4,5]
  position_1 = combo[0]
  position_2 = combo[1]
- position_3 = combo[3]
+ position_3 = combo[2]
  board[position_1] == "X" && board[position_2] == "X" && board[postion_3] == "X"
  board[position_1] == "O" && board[position_2] == "O" && board[postion_3] == "0"
 end
