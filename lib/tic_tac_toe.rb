@@ -91,9 +91,9 @@ def won?(board)
  elsif board[position_1] == "O" && board[position_2] == "O" && board[postion_3] == "0"
    winning_combo - combo 
    
- end
- end
-winning_combo
+    end
+   end
+  winning_combo
 end
 
 def full?(board)
@@ -107,6 +107,7 @@ def draw?(board)
   def over?(board)
     won?(board) || draw?(board)
   end 
+   
    def winner(board)
      if won?(board) # [0,1,2] 
      turn_count(board).odd?
