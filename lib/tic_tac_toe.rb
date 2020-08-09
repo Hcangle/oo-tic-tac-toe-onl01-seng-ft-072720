@@ -72,10 +72,14 @@ def turn_count(board)
 end 
 def current_player(board)
   if turn_count(board).odd?
-    "X"
-  else
     "O"
+  else
+    "X"
   end 
 end 
-
+def won?(board)
+ combo = WIN_COMBINATIONS[0] #=> [3,4,5]
+ position_1 = combo[0]
+ position_2 = 
+end
 end
