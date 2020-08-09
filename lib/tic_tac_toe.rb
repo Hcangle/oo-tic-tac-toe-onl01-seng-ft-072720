@@ -54,6 +54,19 @@ def turn(board)
     turn(board)
   end 
 end 
+def turn_count(board)
+  # count how many spaces have been occupied
+  
+  occupied_spaces = 0 
+  
+  counter = 0 
+  while counter < board.size 
+   if postion_taken?(board, counter)
+    occupied_spaces += 1 
+  end 
+   counter += 1
+ end 
 
+ occupies_spaces
   
 end 
