@@ -114,6 +114,6 @@ def draw?(board)
    else 
      "O"
    end 
-   
+ end 
      
 end
