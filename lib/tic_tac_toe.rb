@@ -67,6 +67,6 @@ def turn_count(board)
    counter += 1
  end 
 
- occupies_spaces
+ occupied_spaces
   
 end 
